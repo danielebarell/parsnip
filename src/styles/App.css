@@ -1,0 +1,83 @@
+:root{
+  --sand1: hsl(50,50%,80%);
+  --over: hsla(0,0%,0%,.2);
+  --over4: hsla(0,0%,0%,.4);
+  --over6: hsla(0,0%,0%,.6);
+  --over8: hsla(0,0%,0%,.8);
+  --danger: hsl(0,50%,50%)
+}
+.util-danger{
+  color: var(--danger);
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: var(--sand1);
+  font-family: "Arial", sans-serif;
+}
+li{
+  list-style: none;
+}
+.app-wrapper{
+  width: 720px;
+  margin: 2rem auto;
+}
+.app-title{
+  color: var(--over4);
+}
+.app-board{
+  border: .5rem solid var(--over4);
+  border-radius: .5rem;
+  margin: 1rem auto;
+  padding: 1rem 2rem;
+  display: flex;
+}
+.task-list{
+  margin-left: 5em;
+  min-width: 160px;
+}
+.task-list:first-child{
+  margin-left: 0;
+}
+.task-list-type{
+  background-color: var(--over6);
+  color: white;
+  font: bold .8em sans-serif;
+  letter-spacing: .3em;
+  padding: .3em 1em;
+  border-radius: .5em;
+}
+.task-list-items-wrapper{
+  border: 1em dashed;
+}
+.task{
+  background-color: var(--over);
+  font-size: 2rem;
+  padding: 0 .5em;
+  border: .2em solid var(--over6);
+  border-top: none;
+}
+
+.task:first-child{
+  border-top: .2em solid var(--over6);
+}
+.task-title{
+  font-size:0.6em;
+  padding: 1em 0 0;
+}
+.task-body{
+  font: italic 200 0.5em "Arial Narrow";
+}
+.task-command-wrapper{
+  padding: .8rem 0 .3rem;
+  display: flex;
+  justify-content: space-between;
+}
+.task-command{
+  font-weight: bold;
+  font-size: .5rem;
+  padding: .2rem .3rem;
+}

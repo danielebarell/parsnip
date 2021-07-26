@@ -1,0 +1,78 @@
+.modal-hide{
+    display: none;
+}
+.modal{
+    --opacity3: hsla(0,0%,0%,.3);
+    --opacity6: hsla(0,0%,0%,.6);
+    --ivory: hsl(60,50%,90%);
+    width: 100vW;
+    height: 100vH;
+    background-color: var(--opacity6);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.modal>.modal-inner{
+    --margin: 2rem;
+    position: absolute;
+    top: var(--margin);
+    right: var(--margin);
+    left: var(--margin);
+}
+.new-task-form{
+    margin: auto;
+    min-width: 400px;
+    max-width: 800px;
+    font-family: sans-serif;
+}
+.new-task-form input, .new-task-form textarea{
+    width: 100%;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    border: none;
+    background-color: hsl(10,10%, 90%);
+    border-radius: 3px;
+    font-family: monospace;
+}
+.new-task-form legend{
+    font-size: 1.5rem;
+    background-color: var(--ivory);
+    padding: 0 .5em;
+}
+.new-task-form label{
+    background-color: var(--ivory);
+    padding: 0 .5em;
+    font-weight: bold;
+}
+.new-task-form fieldset{
+    padding: 25px;
+}
+.new-task-form .close-btn-container{
+    position: relative;
+}
+.btn{
+    border: none;
+    background-color: hsl(10,10%, 90%);
+    border-radius: 3px;
+}
+.new-task-form input:focus, .new-task-form textarea:focus, .btn:focus{
+    outline: 1px solid hsl(10,10%, 55%);
+}
+.btn:active{
+    background-color: hsl(10,10%, 55%);
+    color: hsl(10,10%, 90%);
+}
+
+.new-task-form .close-btn-container button.close-btn{
+    --size : 50px;
+    position: absolute;
+    width: var(--size);
+    height: var(--size);
+    right: 15px;
+    top: -50px;
+}
+.new-task-form .close-btn-container button.close-btn::after{
+    display: block;
+    font-size: 3em;
+    content: "ˣ";
+}
